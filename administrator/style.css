@@ -1,0 +1,77 @@
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Tahoma";
+	font-size: 14px;
+	color: #313131;
+}
+
+a:link {
+	text-decoration: none;
+	outline: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	cursor: default;
+	color: #313131;
+}
+
+/* == login form == */
+body nav:nth-child(1) {
+	margin: 180px auto;
+	width: 350px;
+}
+	body nav:nth-child(1) a {
+		border: 1px solid #ccc;
+		border-top-color: #aaa;
+		border-bottom-color: #fff;
+		display: inline-block;
+		position: relative;
+		z-index: 99;
+		margin-bottom: -1px;
+		padding: 4px 8px;
+		border-radius: 4px 4px 0 0;
+		-webkit-border-radius: 4px 4px 0 0;
+		-moz-border-radius: 4px 4px 0 0;
+	}
+
+.myform form {
+	padding: 15px 20px;
+	border: 1px solid #ccc;
+	border-top-color: #aaa;
+	border-radius: 0 4px 4px 4px;
+	-webkit-border-radius: 0 4px 4px 4px;
+	-moz-border-radius: 0 4px 4px 4px;
+}
+	.myform .form-controls {
+		margin-bottom: 8px;
+	}
+	.myform label {
+		margin-left: 3px;
+		display: block;
+	}
+	.myform input[type="text"], .myform input[type="password"] {
+		width: 100%;
+		padding: 3px;
+		border: 1px solid #ccc;
+		border-top-color: #aaa;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	.myform input[type="submit"], .myform input[type="reset"] {
+		transition: all ease .3s;
+		-moz-transition: all ease .3s;
+		-webkit-transition: all ease .3s;
+		padding: 4px 7px;
+		border: 1px solid #aaa;
+		cursor: pointer;
+		color: #565656;
+	}
+		.myform input[type="submit"]:hover, .myform input[type="reset"]:hover {
+			border-color: #777;
+			color: #313131;
+		}
